@@ -11,8 +11,9 @@ export default {
         'orange-hover': '#E5552E',
         'blue-deep' : '#293241'
       }, 
-      color: {
+      colors: {
         'green' : '#74C69D',
+        'orange-main' : '#EE6C4D',
       },
       fontFamily: {
         'body': ['"Maven Pro", sans-serif']
