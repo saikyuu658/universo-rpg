@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
       backgroundColor : {
-        'regal-blue': '#243c5a',
+        'laranja': '#EE6C4D',
+        'azul-escuro' : '#293241'
       }, 
+      color: {
+        'verde' : '#74C69D',
+        'vermelho' : ''
+      }
     },
   },
   plugins: [],
