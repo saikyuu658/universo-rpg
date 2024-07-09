@@ -9,6 +9,7 @@ import './index.css'
 import Nav from './components/Nav/index.tsx';
 import ErrorPage from './pages/Error/index.tsx';
 import Campaign from './pages/Campaign/index.tsx';
+import Home from './pages/Home/index.tsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     element: <Nav></Nav>,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/",
+        element: <Home></Home>
+      },
       {
         path: "/campaign",
         element: <Campaign></Campaign>

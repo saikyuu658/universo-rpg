@@ -15,7 +15,7 @@ function Nav() {
                     >CAMPAIGN</NavLink></li>
                     <li>TOOLS</li>
                 </ul>
-                <Button name={'Create account'} handleClick={()=>{console.log()}}></Button>
+                <Button name={'Create account'} handleClick={()=>{console.log('teste')}}></Button>
             </nav>  
             <Outlet />
         </>         
