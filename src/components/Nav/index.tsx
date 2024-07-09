@@ -2,8 +2,8 @@ import Button from "../Button";
 
 function Nav() {
     return (
-        <nav>
-            <ul>
+        <nav className="flex justify-between items-center mx-12 h-16">
+            <ul className="flex gap-8">
                 <li>CAMPAIGN</li>
                 <li>TOOLS</li>
             </ul>

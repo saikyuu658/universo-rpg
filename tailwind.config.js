@@ -7,12 +7,15 @@ export default {
   theme: {
     extend: {
       backgroundColor : {
-        'laranja': '#EE6C4D',
-        'azul-escuro' : '#293241'
+        'orange-main': '#EE6C4D',
+        'orange-hover': '#E5552E',
+        'blue-deep' : '#293241'
       }, 
       color: {
-        'verde' : '#74C69D',
-        'vermelho' : ''
+        'green' : '#74C69D',
+      },
+      fontFamily: {
+        'body': ['"Maven Pro", sans-serif']
       }
     },
   },
