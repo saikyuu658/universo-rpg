@@ -2,9 +2,10 @@ import Button from "../../components/Button";
 import Card from "../../components/Card";
 import FiedlFind from "../../components/FieldFind";
 import Tag from "../../components/Tag";
-
+import { useNavigate } from "react-router-dom";
 
 function Home () {
+    const navigate = useNavigate();
     return (
         <section className="mt-10 flex-col items-center flex gap-5">
             <div className="flex flex-col items-center">
@@ -27,7 +28,7 @@ function Home () {
                 </div>
             </div>
 
-            <Button name="Public your history" handleClick={()=>{console.log('public your history')}}></Button>
+            <Button name="Public your history" handleClick={()=>{navigate("/editor");}}></Button>
 
             <div className="mt-[15%] mb-12 w-10/12 flex flex-col gap-1">
                 <Card />
