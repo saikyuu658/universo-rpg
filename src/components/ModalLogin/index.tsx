@@ -62,21 +62,22 @@ function SigninForm (){
     )
 
 }
-export default function ModalLogin({closeModal} : any){
-
-  
-    return(
-        <section className="fixed inset-0 z-10 bg-opacity-35 bg-black flex justify-center items-center">
-            <div className="w-[320px]  run bg-blue-deep-2 p-3 relative rounded-md shadow-lg flex flex-col">
-                <span className="material-symbols-outlined absolute top-2 cursor-pointer w-5 right-2 text-sm rounded-full bg-slate-400 text-center " 
-                    role="presentation"
-                    onClick={closeModal}
-                >close</span>
-                <SigninForm></SigninForm>
-               
-                <hr className="border-t-[2px] border-white rounded-full m-3" />
-                <button className="rounded-full bg-blue-500 py-1">Sign in with Google</button>
-            </div>
-        </section>
-    )
+export default function ModalLogin({closeModal, isVisible} : any){
+    if(isVisible) {
+        return(
+            <section className={"fixed inset-0 z-10 bg-opacity-35 bg-black justify-center items-center flex" } >
+                <div className="w-[320px]  run bg-blue-deep-2 p-3 relative rounded-md shadow-lg flex flex-col">
+                    <span className="material-symbols-outlined absolute top-2 cursor-pointer w-5 right-2 text-sm rounded-full bg-slate-400 text-center " 
+                        role="presentation"
+                        onClick={closeModal}
+                    >close</span>
+                    <SigninForm></SigninForm>
+                   
+                    <hr className="border-t-[2px] border-white rounded-full m-3" />
+                    <button className="rounded-full bg-blue-500 py-1">Sign in with Google</button>
+                </div>
+            </section>
+        )
+    }
+    
 }

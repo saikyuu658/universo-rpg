@@ -1,8 +1,12 @@
 import { Outlet, NavLink } from "react-router-dom";
 import Button from "../Button";
 import ModalLogin from "../ModalLogin";
+import { useState } from "react";
 
 function Nav() {
+    const [isShowModal, setIsShowModal] = useState(false);
+
+    
     return (
         <>
             <nav className="flex justify-between items-center mx-12 h-16">
@@ -22,10 +26,10 @@ function Nav() {
                           }
                     >TOOLS</NavLink></li>
                 </ul>
-                <Button name={'Create account'} handleClick={()=>{console.log('teste')}}></Button>
+                <Button name={'Create account'} handleClick={()=>{setIsShowModal(true)}}></Button>
             </nav>  
 
-            <ModalLogin></ModalLogin>
+            <ModalLogin isVisible={isShowModal} closeModal={()=>{setIsShowModal(false)}}></ModalLogin>
             <Outlet />
         </>         
     )
