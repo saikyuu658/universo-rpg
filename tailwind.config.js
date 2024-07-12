@@ -9,11 +9,14 @@ export default {
       backgroundColor : {
         'orange-main': '#EE6C4D',
         'orange-hover': '#E5552E',
-        'blue-deep' : '#293241'
+        'blue-deep' : '#293241',
+        'blue-deep-2' : '#3D5A80'
       }, 
       colors: {
-        'green' : '#74C69D',
+        'green-core' : '#74C69D',
         'orange-main' : '#EE6C4D',
+        'blue-deep-2' : '#3D5A80'
+
       },
       fontFamily: {
         'body': ['"Maven Pro", sans-serif']
