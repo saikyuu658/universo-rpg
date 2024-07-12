@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import Card from "../../components/Card";
 import FiedlFind from "../../components/FieldFind";
 import Tag from "../../components/Tag";
 
@@ -27,6 +28,12 @@ function Home () {
             </div>
 
             <Button name="Public your history" handleClick={()=>{console.log('public your history')}}></Button>
+
+            <div className="mt-[15%] mb-12 w-10/12 flex flex-col gap-1">
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </section> 
     )
 }
