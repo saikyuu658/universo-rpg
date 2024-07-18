@@ -1,8 +1,8 @@
 
-function Button(props:{name: string, handleClick:any}) {
+function  Button(props:{name: string, handleClick:any}) {
     return (
         <button
-            className="bg-orange-main hover:bg-orange-hover hover:drop-shadow-lg px-3 py-1 rounded-full"
+            className="bg-orange-main text-white hover:bg-orange-hover hover:drop-shadow-lg px-3 py-1 rounded-full"
             onClick={props.handleClick}
         >
             {props.name}
