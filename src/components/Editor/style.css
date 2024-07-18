@@ -1,0 +1,14 @@
+.jodit-dialog__header-title{
+    color: black;
+}
+
+.jodit-dialog_prompt > label {
+    color: black;
+}
+
+.jodit-context{
+    color: black;
+}
+.jodit-wysiwyg{
+    list-style: auto;
+}
